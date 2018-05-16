@@ -4,24 +4,71 @@ items = []
 
 
 
+def floor1_1():
+    while(1):
+        display.floor1_1()
+        userin = ''
+        userin = input("\nType a command or the name of the object you want to interact with.\n")
+        
+
+def room_start():
+    while(1):
+        display.start()
+        userin = ''
+        userin = input("\nType a command or the name of the object you want to interact with.\n")
+        if userin.lower() == 'computer':
+            if password in items:
+               print('good stuff')
+            else:
+               print("The computer is locked. The password should be around here somewhere.")
+        if userin.lower() == 'desk':
+               display.desk_stuff()
+        elif userin == 'e':
+            print("\nYou can't go that way.\n")
+        elif userin == 'w':
+            print("\nYou can't go that way.\n")
+        elif userin == 'n':
+            print("\nYou can't go that way.\n")
+        elif userin == 's':
+            print("\nYou can't go that way.\n")
+        elif userin == 'i':
+            if len(items) == 0:
+                print("\nYou don't have anything at the moment")
+            else:
+                print(items)
+        elif userin == 'c':
+            display.controls()
+        else:
+            print("\nPlease enter either a valid command or an item.\n")
+
+def freedcuff():
+    while(1):
+        display.freedcuff()
+        userin = ''
+        userin = input("\nType a command or the name of the object you want to interact with.\n")
+        if userin == 'e':
+            print("\nYou can't go that way.\n")
+        elif userin == 'w':
+            print("\nYou can't go that way.\n")
+        elif userin == 'n':
+            room_start()
+        elif userin == 's':
+            print("\nYou can't go that way.\n")
+        elif userin == 'i':
+            if len(items) == 0:
+                print("\nYou don't have anything at the moment")
+            else:
+                print(items)
+        elif userin == 'c':
+            display.controls()
+        else:
+            print("\nPlease enter either a valid command or an item.\n")
+
+
 def openlope():
     display.openlope()
     items.append("Cuffkey")
     return
-
-
-def freedcuff():
-    print("Well done!")
-    quit()
-
-
-
-
-
-
-
-
-
 
 #      Beginning of the game
 #
@@ -50,19 +97,21 @@ while(1):
             print("You have already opened the envelope.")
         else:
             openlope()
-    elif userin == 'r':
+    elif userin == 'e':
         print("\nYou can't go that way.\n")
-    elif userin == 'l':
+    elif userin == 'w':
         print("\nYou can't go that way.\n")
-    elif userin == 'u':
+    elif userin == 'n':
         print("\nYou can't go that way.\n")
-    elif userin == 'd':
+    elif userin == 's':
         print("\nYou can't go that way.\n")
     elif userin == 'i':
         if items is None:
             print("\nYou don't have anything at the moment")
         else:
             print(items)
+    elif userin == 'c':
+        display.controls()
     else:
         print("\nPlease enter either a valid command or an item.\n")
 
