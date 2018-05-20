@@ -1,7 +1,15 @@
 import display
 
 items = []
+start = 1
 
+def floor2_1():
+
+def floor1_2():
+
+def end():
+
+def notyet():
 
 
 def floor1_1():
@@ -9,11 +17,36 @@ def floor1_1():
         display.floor1_1()
         userin = ''
         userin = input("\nType a command or the name of the object you want to interact with.\n")
-        
+        if userin.lower() == 'television':
+        elif userin.lower() == 'bookshelf':
+        elif userin.lower() == 'e':
+             floor2_1()
+        elif userin.lower() == 'w':
+             floor1_2()
+        elif userin.lower() == 'n':
+             if "mainkey" in items:
+                 end()
+             else:
+                 notyet()
+        elif userin.lower() == 's':
+             room_start()
+        elif userin.lower() == 'i':
+            if len(items) == 0:
+                print("\nYou don't have anything at the moment.")
+            else:
+                print(items)
+        elif userin.lower() == 'c':
+            display.controls()
+        else:
+            print("\nPlease enter either a valid command or an item.\n")
 
 def room_start():
     while(1):
-        display.start()
+        if start == 1:
+            start = 0
+            display.start()
+        else:
+            display.back_start()
         userin = ''
         userin = input("\nType a command or the name of the object you want to interact with.\n")
         if userin.lower() == 'computer':
@@ -21,7 +54,7 @@ def room_start():
                print('good stuff')
             else:
                print("The computer is locked. The password should be around here somewhere.")
-        if userin.lower() == 'desk':
+        elif userin.lower() == 'desk':
                display.desk_stuff()
         elif userin == 'e':
             print("\nYou can't go that way.\n")

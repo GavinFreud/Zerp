@@ -94,6 +94,17 @@ def start():
 
 ************************************************''')
 
+def back_start():
+
+    print('''*************************************************
+
+  You return to the basement. Around you, you see
+  nothing but a DESK and a COMPUTER. You also ob-
+  serve a set of stairs on the south side of the 
+  room leading upstairs.
+
+************************************************''')
+
 def desk_stuff():
 
     print('''*************************************************
