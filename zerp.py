@@ -4,8 +4,54 @@ items = []
 start = 1
 
 def floor2_1():
+    while(1):
+        display.floor1_1()
+        userin = ''
+        userin = input("\nType a command or the name of the object you want to interact with.\n")
+        if userin.lower() == '':
+        elif userin.lower() == '':
+        elif userin.lower() == 'e':
+             floor2_1()
+        elif userin.lower() == 'w':
+             floor1_2()
+        elif userin.lower() == 'n':
+  
+        elif userin.lower() == 's':
+             room_start()
+        elif userin.lower() == 'i':
+            if len(items) == 0:
+                print("\nYou don't have anything at the moment.")
+            else:
+                print(items)
+        elif userin.lower() == 'c':
+            display.controls()
+        else:
+            print("\nPlease enter either a valid command or an item.\n")
 
 def floor1_2():
+    while(1):
+        display.floor1_1()
+        userin = ''
+        userin = input("\nType a command or the name of the object you want to interact with.\n")
+        if userin.lower() == '':
+        elif userin.lower() == '':
+        elif userin.lower() == 'e':
+             floor2_1()
+        elif userin.lower() == 'w':
+             floor1_2()
+        elif userin.lower() == 'n':
+             
+        elif userin.lower() == 's':
+             room_start()
+        elif userin.lower() == 'i':
+            if len(items) == 0:
+                print("\nYou don't have anything at the moment.")
+            else:
+                print(items)
+        elif userin.lower() == 'c':
+            display.controls()
+        else:
+            print("\nPlease enter either a valid command or an item.\n")
 
 def end():
 
