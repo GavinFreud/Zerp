@@ -118,6 +118,19 @@ def desk_stuff():
 
 ************************************************''')
 
+def computer_1():
+
+    print('''*************************************************
+  
+  You boot up the computer, and see it prompt you for
+  a username and a password. You try a few off the t-
+  op of your head, but nothing seems to work. You sh-
+  ut the computer off in frustration, and decide to 
+  come back and try again once you know what the pas-
+  sword and username are.
+  
+************************************************''')
+
 def floor1_1():
     print('''*************************************************
 

@@ -2,7 +2,7 @@ import display
 
 items = []
 start = 1
-
+'''
 def floor2_1():
     while(1):
         display.floor1_1()
@@ -28,6 +28,9 @@ def floor2_1():
         else:
             print("\nPlease enter either a valid command or an item.\n")
 
+'''
+
+'''
 def floor1_2():
     while(1):
         display.floor1_1()
@@ -56,10 +59,10 @@ def floor1_2():
 def end():
 
 def notyet():
-
-
+'''
+'''
 def floor1_1():
-    while(1):
+    while(1):	
         display.floor1_1()
         userin = ''
         userin = input("\nType a command or the name of the object you want to interact with.\n")
@@ -86,6 +89,7 @@ def floor1_1():
         else:
             print("\nPlease enter either a valid command or an item.\n")
 
+'''
 def room_start():
     while(1):
         if start == 1:
@@ -99,7 +103,7 @@ def room_start():
             if password in items:
                print('good stuff')
             else:
-               print("The computer is locked. The password should be around here somewhere.")
+               display.computer_1();
         elif userin.lower() == 'desk':
                display.desk_stuff()
         elif userin == 'e':
