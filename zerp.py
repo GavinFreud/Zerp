@@ -15,7 +15,6 @@ def floor2_1():
         elif userin.lower() == 'w':
              floor1_2()
         elif userin.lower() == 'n':
-  
         elif userin.lower() == 's':
              room_start()
         elif userin.lower() == 'i':
@@ -28,9 +27,7 @@ def floor2_1():
         else:
             print("\nPlease enter either a valid command or an item.\n")
 
-'''
 
-'''
 def floor1_2():
     while(1):
         display.floor1_1()
@@ -43,7 +40,7 @@ def floor1_2():
         elif userin.lower() == 'w':
              floor1_2()
         elif userin.lower() == 'n':
-             
+
         elif userin.lower() == 's':
              room_start()
         elif userin.lower() == 'i':
@@ -59,15 +56,16 @@ def floor1_2():
 def end():
 
 def notyet():
-'''
-'''
+
 def floor1_1():
-    while(1):	
+    while(1):
         display.floor1_1()
         userin = ''
         userin = input("\nType a command or the name of the object you want to interact with.\n")
         if userin.lower() == 'television':
+            print("The television wouldn't turn on")
         elif userin.lower() == 'bookshelf':
+            print("The bookshelf had nothing interesting")
         elif userin.lower() == 'e':
              floor2_1()
         elif userin.lower() == 'w':
@@ -88,7 +86,6 @@ def floor1_1():
             display.controls()
         else:
             print("\nPlease enter either a valid command or an item.\n")
-
 '''
 def room_start():
     while(1):
@@ -158,7 +155,7 @@ def openlope():
 #
 #
 #
-#    
+#
 items = []
 display.title()
 input("Press enter to start! ")
@@ -197,7 +194,3 @@ while(1):
         display.controls()
     else:
         print("\nPlease enter either a valid command or an item.\n")
-
-
-
- 
